@@ -1,0 +1,129 @@
+body{
+    background-color: #C4E5DF;
+}
+main {
+    position: relative;
+}
+
+.logo{
+    width: 300px;
+    height: 300px;
+    margin-bottom: 0;
+}
+/*radio*/
+
+.currency {
+    position: relative;
+    height: 48px;
+    width: 48px;
+}
+
+.currency__radio {
+    position: absolute;
+    opacity: 0;
+}
+
+.currency__radio:checked + .img__radio {
+    filter: none;
+    border-color: tomato;
+}
+
+.img__radio {
+    position: absolute;
+    display: inline-block;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    filter: grayscale(100%);
+    border: 1px dashed transparent;
+    border-radius: 10px;
+}
+
+.img__radio_dollar{
+    background-image: url("../img/dollar.png");
+}
+
+.img__radio_euro {
+    background-image: url("../img/euro.png");
+}
+
+.img__radio_hryvnia {
+    background-image: url("../img/hryvnia.png");
+}
+
+/*table*/
+
+
+.dollar {
+    background: url("../img/dollar.png") center/contain no-repeat;
+    height: 40px;
+    width: 60px;
+}
+
+.euro {
+    background: url("../img/euro.png") center/contain no-repeat;
+    height: 40px;
+    width: 60px;
+}
+
+.hryvnia {
+    background: url("../img/hryvnia.png") center/contain no-repeat;
+    height: 40px;
+    width: 60px;
+}
+
+
+#orders tr {
+    cursor: pointer;
+}
+
+#orders .taken {
+    background: #28a745;
+    color: #fff;
+}
+
+/*modal*/
+
+.modal {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.modal .deadline {
+    font-size: 1.25rem;
+    font-weight: 500;
+    line-height: 1.2;
+}
+
+.modal-content {
+    border-radius: .5rem;
+}
+
+.modal-currency span {
+    display: inline-block;
+    vertical-align: middle;
+    filter: none;
+}
+
+.modal-currency {
+    font-size: 2em;
+}
+
+#block-customer {
+    display: none;
+}
+
+#block-freelancer {
+    display: none;
+}
+
+#btn-exit {
+    position: absolute;
+    display: none;
+    top: 3rem;
+    right: 1rem;
+    padding: 0.5rem 3rem;
+}
