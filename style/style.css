@@ -127,3 +127,7 @@ main {
     right: 1rem;
     padding: 0.5rem 3rem;
 }
+
+.phone{
+    display: none;
+}

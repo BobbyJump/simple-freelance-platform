@@ -165,11 +165,22 @@ document.addEventListener('DOMContentLoaded', () => {
                 obj[elem.name] = elem.value;
         });
 
+        //phone field validation
+        const phone = document.getElementById('phone');
+        const phoneBlock = document.querySelector('.phone');
+        console.log(phone);
+        if(isNaN(phone.value) || (phone.value.length != 12)){
+            phone.style.border = '1px solid red';
+            phoneBlock.style.display = 'block';
+            return
+        }
+
         formCustomer.reset();
 
         orders.push(obj);
         toStorage();
+        alert('Your order is successfully created. You can see the details of the order in the section "Freelancer"');
     });
 
     
-})
+});
